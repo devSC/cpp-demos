@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/devSC/Documents/MyProject/cpp-demos/Box.cpp
+Box.h
+/Users/devSC/Documents/MyProject/cpp-demos/Box.h
+iostream
+-
+
+/Users/devSC/Documents/MyProject/cpp-demos/Box.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/DataStruct.cpp
+DataStruct.h
+/Users/devSC/Documents/MyProject/cpp-demos/DataStruct.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/DataStruct.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/main.cpp
+iostream
+-
+Box.h
+/Users/devSC/Documents/MyProject/cpp-demos/Box.h
+

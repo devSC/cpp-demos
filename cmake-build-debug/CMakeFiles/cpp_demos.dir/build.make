@@ -81,69 +81,43 @@ CMakeFiles/cpp_demos.dir/main.cpp.o.provides: CMakeFiles/cpp_demos.dir/main.cpp.
 CMakeFiles/cpp_demos.dir/main.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/main.cpp.o
 
 
-CMakeFiles/cpp_demos.dir/DataStruct.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
-CMakeFiles/cpp_demos.dir/DataStruct.cpp.o: ../DataStruct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_demos.dir/DataStruct.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/DataStruct.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/DataStruct.cpp
+CMakeFiles/cpp_demos.dir/student.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
+CMakeFiles/cpp_demos.dir/student.cpp.o: ../student.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_demos.dir/student.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/student.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/student.cpp
 
-CMakeFiles/cpp_demos.dir/DataStruct.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/DataStruct.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/DataStruct.cpp > CMakeFiles/cpp_demos.dir/DataStruct.cpp.i
+CMakeFiles/cpp_demos.dir/student.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/student.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/student.cpp > CMakeFiles/cpp_demos.dir/student.cpp.i
 
-CMakeFiles/cpp_demos.dir/DataStruct.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/DataStruct.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/DataStruct.cpp -o CMakeFiles/cpp_demos.dir/DataStruct.cpp.s
+CMakeFiles/cpp_demos.dir/student.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/student.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/student.cpp -o CMakeFiles/cpp_demos.dir/student.cpp.s
 
-CMakeFiles/cpp_demos.dir/DataStruct.cpp.o.requires:
+CMakeFiles/cpp_demos.dir/student.cpp.o.requires:
 
-.PHONY : CMakeFiles/cpp_demos.dir/DataStruct.cpp.o.requires
+.PHONY : CMakeFiles/cpp_demos.dir/student.cpp.o.requires
 
-CMakeFiles/cpp_demos.dir/DataStruct.cpp.o.provides: CMakeFiles/cpp_demos.dir/DataStruct.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/DataStruct.cpp.o.provides.build
-.PHONY : CMakeFiles/cpp_demos.dir/DataStruct.cpp.o.provides
+CMakeFiles/cpp_demos.dir/student.cpp.o.provides: CMakeFiles/cpp_demos.dir/student.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/student.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_demos.dir/student.cpp.o.provides
 
-CMakeFiles/cpp_demos.dir/DataStruct.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/DataStruct.cpp.o
-
-
-CMakeFiles/cpp_demos.dir/Box.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
-CMakeFiles/cpp_demos.dir/Box.cpp.o: ../Box.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpp_demos.dir/Box.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/Box.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/Box.cpp
-
-CMakeFiles/cpp_demos.dir/Box.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/Box.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/Box.cpp > CMakeFiles/cpp_demos.dir/Box.cpp.i
-
-CMakeFiles/cpp_demos.dir/Box.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/Box.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/Box.cpp -o CMakeFiles/cpp_demos.dir/Box.cpp.s
-
-CMakeFiles/cpp_demos.dir/Box.cpp.o.requires:
-
-.PHONY : CMakeFiles/cpp_demos.dir/Box.cpp.o.requires
-
-CMakeFiles/cpp_demos.dir/Box.cpp.o.provides: CMakeFiles/cpp_demos.dir/Box.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Box.cpp.o.provides.build
-.PHONY : CMakeFiles/cpp_demos.dir/Box.cpp.o.provides
-
-CMakeFiles/cpp_demos.dir/Box.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/Box.cpp.o
+CMakeFiles/cpp_demos.dir/student.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/student.cpp.o
 
 
 # Object files for target cpp_demos
 cpp_demos_OBJECTS = \
 "CMakeFiles/cpp_demos.dir/main.cpp.o" \
-"CMakeFiles/cpp_demos.dir/DataStruct.cpp.o" \
-"CMakeFiles/cpp_demos.dir/Box.cpp.o"
+"CMakeFiles/cpp_demos.dir/student.cpp.o"
 
 # External object files for target cpp_demos
 cpp_demos_EXTERNAL_OBJECTS =
 
 cpp_demos: CMakeFiles/cpp_demos.dir/main.cpp.o
-cpp_demos: CMakeFiles/cpp_demos.dir/DataStruct.cpp.o
-cpp_demos: CMakeFiles/cpp_demos.dir/Box.cpp.o
+cpp_demos: CMakeFiles/cpp_demos.dir/student.cpp.o
 cpp_demos: CMakeFiles/cpp_demos.dir/build.make
 cpp_demos: CMakeFiles/cpp_demos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable cpp_demos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable cpp_demos"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_demos.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -152,8 +126,7 @@ CMakeFiles/cpp_demos.dir/build: cpp_demos
 .PHONY : CMakeFiles/cpp_demos.dir/build
 
 CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/main.cpp.o.requires
-CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/DataStruct.cpp.o.requires
-CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/Box.cpp.o.requires
+CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/student.cpp.o.requires
 
 .PHONY : CMakeFiles/cpp_demos.dir/requires
 

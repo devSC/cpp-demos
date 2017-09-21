@@ -123,60 +123,6 @@ cpp_demos/fast:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/build
 .PHONY : cpp_demos/fast
 
-Box.o: Box.cpp.o
-
-.PHONY : Box.o
-
-# target to build an object file
-Box.cpp.o:
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Box.cpp.o
-.PHONY : Box.cpp.o
-
-Box.i: Box.cpp.i
-
-.PHONY : Box.i
-
-# target to preprocess a source file
-Box.cpp.i:
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Box.cpp.i
-.PHONY : Box.cpp.i
-
-Box.s: Box.cpp.s
-
-.PHONY : Box.s
-
-# target to generate assembly for a file
-Box.cpp.s:
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Box.cpp.s
-.PHONY : Box.cpp.s
-
-DataStruct.o: DataStruct.cpp.o
-
-.PHONY : DataStruct.o
-
-# target to build an object file
-DataStruct.cpp.o:
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/DataStruct.cpp.o
-.PHONY : DataStruct.cpp.o
-
-DataStruct.i: DataStruct.cpp.i
-
-.PHONY : DataStruct.i
-
-# target to preprocess a source file
-DataStruct.cpp.i:
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/DataStruct.cpp.i
-.PHONY : DataStruct.cpp.i
-
-DataStruct.s: DataStruct.cpp.s
-
-.PHONY : DataStruct.s
-
-# target to generate assembly for a file
-DataStruct.cpp.s:
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/DataStruct.cpp.s
-.PHONY : DataStruct.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -204,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+student.o: student.cpp.o
+
+.PHONY : student.o
+
+# target to build an object file
+student.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/student.cpp.o
+.PHONY : student.cpp.o
+
+student.i: student.cpp.i
+
+.PHONY : student.i
+
+# target to preprocess a source file
+student.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/student.cpp.i
+.PHONY : student.cpp.i
+
+student.s: student.cpp.s
+
+.PHONY : student.s
+
+# target to generate assembly for a file
+student.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/student.cpp.s
+.PHONY : student.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cpp_demos"
-	@echo "... Box.o"
-	@echo "... Box.i"
-	@echo "... Box.s"
-	@echo "... DataStruct.o"
-	@echo "... DataStruct.i"
-	@echo "... DataStruct.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... student.o"
+	@echo "... student.i"
+	@echo "... student.s"
 .PHONY : help
 
 

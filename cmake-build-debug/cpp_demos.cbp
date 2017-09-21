@@ -80,19 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Box.cpp">
-			<Option target="cpp_demos"/>
-		</Unit>
-		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Box.h">
-			<Option target="cpp_demos"/>
-		</Unit>
-		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/DataStruct.cpp">
-			<Option target="cpp_demos"/>
-		</Unit>
-		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/DataStruct.h">
-			<Option target="cpp_demos"/>
-		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/main.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/student.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/student.h">
 			<Option target="cpp_demos"/>
 		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/CMakeLists.txt">

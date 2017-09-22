@@ -86,6 +86,12 @@
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Age.h">
 			<Option target="cpp_demos"/>
 		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Array.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Array.h">
+			<Option target="cpp_demos"/>
+		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/book.cpp">
 			<Option target="cpp_demos"/>
 		</Unit>
@@ -96,6 +102,12 @@
 			<Option target="cpp_demos"/>
 		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/codingbook.h">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/complex.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/complex.h">
 			<Option target="cpp_demos"/>
 		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/derived.cpp">

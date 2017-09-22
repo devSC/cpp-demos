@@ -2,6 +2,7 @@
 #include "student.h"
 #include "book.h"
 #include "derived.h"
+#include "complex.h"
 //声明使用std命名控件，下面凡是用到标准库的方法属性都不需要使用std::去使用
 //std 是所有标准库的命名空间的名字，
 using namespace std;
@@ -51,6 +52,10 @@ void testClass();
 void testVirtualClassAndMethod();
 
 
+//运算符重载
+void testcomplex();
+
+
 int main() {
 
 //    testPrintf();
@@ -74,7 +79,10 @@ int main() {
 //    testNewDelete();
 
 //    testClass();
-    testVirtualClassAndMethod();
+
+//    testVirtualClassAndMethod();
+
+    void testcomplex();
     return 0;
 }
 
@@ -316,4 +324,38 @@ void testTypeId() {
     typeid(d) == typeid(long)	true
     typeid(d) == typeid(int)	false
      * */
+}
+
+
+void testcomplex() {
+    complex c1(4.3, -5.8);
+    complex c2(8.4, 6.7);
+    complex c3;
+
+    //复数的加法
+    c3 = c1 + c2;
+    //规范调用方法
+    c3 = c1.operator+(c2);
+
+    cout<<"c1 + c2 = ";
+    c3.display();
+    cout<<endl;
+
+    //复数的减法
+    c3 = c1 - c2;
+    cout<<"c1 - c2 = ";
+    c3.display();
+    cout<<endl;
+
+    //复数的乘法
+    c3 = c1 * c2;
+    cout<<"c1 * c2 = ";
+    c3.display();
+    cout<<endl;
+
+    //复数的除法
+    c3 = c1 / c2;
+    cout<<"c1 / c2 = ";
+    c3.display();
+    cout<<endl;
 }

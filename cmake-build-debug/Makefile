@@ -150,6 +150,33 @@ Age.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Age.cpp.s
 .PHONY : Age.cpp.s
 
+Array.o: Array.cpp.o
+
+.PHONY : Array.o
+
+# target to build an object file
+Array.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Array.cpp.o
+.PHONY : Array.cpp.o
+
+Array.i: Array.cpp.i
+
+.PHONY : Array.i
+
+# target to preprocess a source file
+Array.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Array.cpp.i
+.PHONY : Array.cpp.i
+
+Array.s: Array.cpp.s
+
+.PHONY : Array.s
+
+# target to generate assembly for a file
+Array.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Array.cpp.s
+.PHONY : Array.cpp.s
+
 book.o: book.cpp.o
 
 .PHONY : book.o
@@ -203,6 +230,33 @@ codingbook.s: codingbook.cpp.s
 codingbook.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/codingbook.cpp.s
 .PHONY : codingbook.cpp.s
+
+complex.o: complex.cpp.o
+
+.PHONY : complex.o
+
+# target to build an object file
+complex.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/complex.cpp.o
+.PHONY : complex.cpp.o
+
+complex.i: complex.cpp.i
+
+.PHONY : complex.i
+
+# target to preprocess a source file
+complex.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/complex.cpp.i
+.PHONY : complex.cpp.i
+
+complex.s: complex.cpp.s
+
+.PHONY : complex.s
+
+# target to generate assembly for a file
+complex.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/complex.cpp.s
+.PHONY : complex.cpp.s
 
 derived.o: derived.cpp.o
 
@@ -378,12 +432,18 @@ help:
 	@echo "... Age.o"
 	@echo "... Age.i"
 	@echo "... Age.s"
+	@echo "... Array.o"
+	@echo "... Array.i"
+	@echo "... Array.s"
 	@echo "... book.o"
 	@echo "... book.i"
 	@echo "... book.s"
 	@echo "... codingbook.o"
 	@echo "... codingbook.i"
 	@echo "... codingbook.s"
+	@echo "... complex.o"
+	@echo "... complex.i"
+	@echo "... complex.s"
 	@echo "... derived.o"
 	@echo "... derived.i"
 	@echo "... derived.s"

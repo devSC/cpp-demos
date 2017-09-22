@@ -225,6 +225,54 @@ CMakeFiles/cpp_demos.dir/virtualclass.cpp.o.provides: CMakeFiles/cpp_demos.dir/v
 CMakeFiles/cpp_demos.dir/virtualclass.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/virtualclass.cpp.o
 
 
+CMakeFiles/cpp_demos.dir/derived.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
+CMakeFiles/cpp_demos.dir/derived.cpp.o: ../derived.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cpp_demos.dir/derived.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/derived.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/derived.cpp
+
+CMakeFiles/cpp_demos.dir/derived.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/derived.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/derived.cpp > CMakeFiles/cpp_demos.dir/derived.cpp.i
+
+CMakeFiles/cpp_demos.dir/derived.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/derived.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/derived.cpp -o CMakeFiles/cpp_demos.dir/derived.cpp.s
+
+CMakeFiles/cpp_demos.dir/derived.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_demos.dir/derived.cpp.o.requires
+
+CMakeFiles/cpp_demos.dir/derived.cpp.o.provides: CMakeFiles/cpp_demos.dir/derived.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/derived.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_demos.dir/derived.cpp.o.provides
+
+CMakeFiles/cpp_demos.dir/derived.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/derived.cpp.o
+
+
+CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
+CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o: ../purevirtualclass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/purevirtualclass.cpp
+
+CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/purevirtualclass.cpp > CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.i
+
+CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/purevirtualclass.cpp -o CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.s
+
+CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o.requires
+
+CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o.provides: CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o.provides
+
+CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o
+
+
 # Object files for target cpp_demos
 cpp_demos_OBJECTS = \
 "CMakeFiles/cpp_demos.dir/main.cpp.o" \
@@ -233,7 +281,9 @@ cpp_demos_OBJECTS = \
 "CMakeFiles/cpp_demos.dir/Age.cpp.o" \
 "CMakeFiles/cpp_demos.dir/codingbook.cpp.o" \
 "CMakeFiles/cpp_demos.dir/teacher.cpp.o" \
-"CMakeFiles/cpp_demos.dir/virtualclass.cpp.o"
+"CMakeFiles/cpp_demos.dir/virtualclass.cpp.o" \
+"CMakeFiles/cpp_demos.dir/derived.cpp.o" \
+"CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o"
 
 # External object files for target cpp_demos
 cpp_demos_EXTERNAL_OBJECTS =
@@ -245,9 +295,11 @@ cpp_demos: CMakeFiles/cpp_demos.dir/Age.cpp.o
 cpp_demos: CMakeFiles/cpp_demos.dir/codingbook.cpp.o
 cpp_demos: CMakeFiles/cpp_demos.dir/teacher.cpp.o
 cpp_demos: CMakeFiles/cpp_demos.dir/virtualclass.cpp.o
+cpp_demos: CMakeFiles/cpp_demos.dir/derived.cpp.o
+cpp_demos: CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o
 cpp_demos: CMakeFiles/cpp_demos.dir/build.make
 cpp_demos: CMakeFiles/cpp_demos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable cpp_demos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable cpp_demos"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_demos.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -262,6 +314,8 @@ CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/Age.cpp.o.requires
 CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/codingbook.cpp.o.requires
 CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/teacher.cpp.o.requires
 CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/virtualclass.cpp.o.requires
+CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/derived.cpp.o.requires
+CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o.requires
 
 .PHONY : CMakeFiles/cpp_demos.dir/requires
 

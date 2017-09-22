@@ -55,7 +55,7 @@ double book::getprice() {
 }
 
 void book::settitle(char *a) {
-    title = title;
+    title = a;
 }
 
 char * book::gettitle() {
@@ -66,5 +66,9 @@ void book::display() {
     cout<<"The price of "<<title<<" is $"<< price <<endl;
 }
 
+
+void display(book &b) {
+    cout<<"The price of "<<b.title<<" is $"<<b.price<<endl;
+}
 //
 int book::count = 0;

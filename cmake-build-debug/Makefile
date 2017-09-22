@@ -204,6 +204,33 @@ codingbook.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/codingbook.cpp.s
 .PHONY : codingbook.cpp.s
 
+derived.o: derived.cpp.o
+
+.PHONY : derived.o
+
+# target to build an object file
+derived.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/derived.cpp.o
+.PHONY : derived.cpp.o
+
+derived.i: derived.cpp.i
+
+.PHONY : derived.i
+
+# target to preprocess a source file
+derived.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/derived.cpp.i
+.PHONY : derived.cpp.i
+
+derived.s: derived.cpp.s
+
+.PHONY : derived.s
+
+# target to generate assembly for a file
+derived.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/derived.cpp.s
+.PHONY : derived.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -230,6 +257,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+purevirtualclass.o: purevirtualclass.cpp.o
+
+.PHONY : purevirtualclass.o
+
+# target to build an object file
+purevirtualclass.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o
+.PHONY : purevirtualclass.cpp.o
+
+purevirtualclass.i: purevirtualclass.cpp.i
+
+.PHONY : purevirtualclass.i
+
+# target to preprocess a source file
+purevirtualclass.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.i
+.PHONY : purevirtualclass.cpp.i
+
+purevirtualclass.s: purevirtualclass.cpp.s
+
+.PHONY : purevirtualclass.s
+
+# target to generate assembly for a file
+purevirtualclass.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.s
+.PHONY : purevirtualclass.cpp.s
 
 student.o: student.cpp.o
 
@@ -330,9 +384,15 @@ help:
 	@echo "... codingbook.o"
 	@echo "... codingbook.i"
 	@echo "... codingbook.s"
+	@echo "... derived.o"
+	@echo "... derived.i"
+	@echo "... derived.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... purevirtualclass.o"
+	@echo "... purevirtualclass.i"
+	@echo "... purevirtualclass.s"
 	@echo "... student.o"
 	@echo "... student.i"
 	@echo "... student.s"

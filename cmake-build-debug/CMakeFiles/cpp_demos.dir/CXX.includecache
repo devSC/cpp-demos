@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/devSC/Documents/MyProject/cpp-demos/Age.cpp
+Age.h
+/Users/devSC/Documents/MyProject/cpp-demos/Age.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/Age.h
+
 /Users/devSC/Documents/MyProject/cpp-demos/book.cpp
 iostream
 -
@@ -14,6 +20,26 @@ book.h
 
 /Users/devSC/Documents/MyProject/cpp-demos/book.h
 
+/Users/devSC/Documents/MyProject/cpp-demos/codingbook.cpp
+mach/mach_types.h
+-
+codingbook.h
+/Users/devSC/Documents/MyProject/cpp-demos/codingbook.h
+iostream
+-
+
+/Users/devSC/Documents/MyProject/cpp-demos/codingbook.h
+book.h
+/Users/devSC/Documents/MyProject/cpp-demos/book.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/derived.cpp
+derived.h
+/Users/devSC/Documents/MyProject/cpp-demos/derived.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/derived.h
+iostream
+-
+
 /Users/devSC/Documents/MyProject/cpp-demos/main.cpp
 iostream
 -
@@ -21,10 +47,24 @@ student.h
 /Users/devSC/Documents/MyProject/cpp-demos/student.h
 book.h
 /Users/devSC/Documents/MyProject/cpp-demos/book.h
+derived.h
+/Users/devSC/Documents/MyProject/cpp-demos/derived.h
 
 /Users/devSC/Documents/MyProject/cpp-demos/student.cpp
 student.h
 /Users/devSC/Documents/MyProject/cpp-demos/student.h
 
 /Users/devSC/Documents/MyProject/cpp-demos/student.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/teacher.cpp
+teacher.h
+/Users/devSC/Documents/MyProject/cpp-demos/teacher.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/teacher.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/virtualclass.cpp
+virtualclass.h
+/Users/devSC/Documents/MyProject/cpp-demos/virtualclass.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/virtualclass.h
 

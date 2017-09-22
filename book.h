@@ -40,7 +40,7 @@ public:
      const成员函数
      const成员函数可以使用类中的所有成员变量，但是不能修改变量的值，这种措施主要还是为了保护数据而设置的。
      */
-    double getprice() const;
+    double getprice();
 
     void settitle(char *a);
     char* gettitle();
@@ -49,7 +49,9 @@ public:
      * http://www.weixueyuan.net/view/6350.html
      * 通过friend关键字，我们可以将不属于当前类的一个函数在当前类中加以声明，该函数便可以成为当前类的友元函数。
      */
-    friend void display();
+    friend void display(book &b);
+
+    void display();
 
     //析构函数。析构函数就是用于回收创建对象时所消耗的各种资源。与构造函数类似，析构函数也是一个成员函数。
     ~book();

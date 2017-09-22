@@ -1,7 +1,7 @@
 #include <iostream>
 #include "student.h"
 #include "book.h"
-
+#include "derived.h"
 //声明使用std命名控件，下面凡是用到标准库的方法属性都不需要使用std::去使用
 //std 是所有标准库的命名空间的名字，
 using namespace std;
@@ -48,6 +48,8 @@ void testNewDelete();
 
 void testClass();
 
+void testVirtualClassAndMethod();
+
 
 int main() {
 
@@ -71,8 +73,8 @@ int main() {
 
 //    testNewDelete();
 
-    testClass();
-
+//    testClass();
+    testVirtualClassAndMethod();
     return 0;
 }
 
@@ -248,7 +250,7 @@ void testClass() {
     Alice.display();
 
     book Harry("Harry Potter", 49.9);
-    Harry.display();
+    display(Harry);
 }
 
 
@@ -260,4 +262,58 @@ void testArray() {
 
     //数组的地址
     //a == &a == &a[0]
+}
+
+
+
+/*
+ * 形成多态必须具备以下三个条件：
+ * 必须存在继承关系；
+ * 继承关系中必须有同名的虚函数；
+ * 存在基类类型的指针或引用，通过该指针或引用调用虚函数。
+ *
+ * */
+void testVirtualClassAndMethod2();
+void testVirtualClassAndMethod() {
+//    base *p;
+//    derived test;
+//    p = &test;
+//    p->display();
+
+    testVirtualClassAndMethod2();
+}
+
+void testVirtualClassAndMethod2() {
+    base *p = new base;
+    p->display();
+    delete p;
+
+    p = new derived;
+    p->display();
+    delete p;
+}
+
+
+void testTypeId() {
+    int a;
+    double b;
+    char *c;
+    long d;
+
+    if (typeid(a) == typeid(int)) {
+        cout<< "true" << endl;
+    }
+    /*
+    typeid(a) == typeid(int)	true
+    typeid(a) == typeid(float)	false
+    typeid(a) == typeid(int *)	false
+    typeid(b) == typeid(double)	true
+    typeid(b) == typeid(float)	false
+    typeid(b) == typeid(long double)	false
+    typeid(c) == typeid(char *)	true
+    typeid(c) == typeid(char)	false
+    typeid(c) == typeid(string)	false
+    typeid(d) == typeid(long)	true
+    typeid(d) == typeid(int)	false
+     * */
 }

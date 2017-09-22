@@ -98,7 +98,19 @@
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/codingbook.h">
 			<Option target="cpp_demos"/>
 		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/derived.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/derived.h">
+			<Option target="cpp_demos"/>
+		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/main.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/purevirtualclass.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/purevirtualclass.h">
 			<Option target="cpp_demos"/>
 		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/student.cpp">

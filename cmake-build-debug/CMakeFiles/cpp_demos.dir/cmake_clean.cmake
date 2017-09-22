@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_demos.dir/codingbook.cpp.o"
   "CMakeFiles/cpp_demos.dir/teacher.cpp.o"
   "CMakeFiles/cpp_demos.dir/virtualclass.cpp.o"
+  "CMakeFiles/cpp_demos.dir/derived.cpp.o"
+  "CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o"
   "cpp_demos.pdb"
   "cpp_demos"
 )

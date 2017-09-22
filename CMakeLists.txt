@@ -3,5 +3,5 @@ project(cpp_demos)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp student.cpp student.h book.cpp book.h Age.cpp Age.h codingbook.cpp codingbook.h teacher.cpp teacher.h virtualclass.cpp virtualclass.h)
+set(SOURCE_FILES main.cpp student.cpp student.h book.cpp book.h Age.cpp Age.h codingbook.cpp codingbook.h teacher.cpp teacher.h virtualclass.cpp virtualclass.h derived.cpp derived.h purevirtualclass.cpp purevirtualclass.h)
 add_executable(cpp_demos ${SOURCE_FILES})

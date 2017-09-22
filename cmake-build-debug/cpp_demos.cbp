@@ -92,6 +92,12 @@
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/book.h">
 			<Option target="cpp_demos"/>
 		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/codingbook.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/codingbook.h">
+			<Option target="cpp_demos"/>
+		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/main.cpp">
 			<Option target="cpp_demos"/>
 		</Unit>
@@ -99,6 +105,18 @@
 			<Option target="cpp_demos"/>
 		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/student.h">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/teacher.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/teacher.h">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/virtualclass.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/virtualclass.h">
 			<Option target="cpp_demos"/>
 		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/CMakeLists.txt">

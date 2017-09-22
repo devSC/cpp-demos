@@ -177,6 +177,33 @@ book.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/book.cpp.s
 .PHONY : book.cpp.s
 
+codingbook.o: codingbook.cpp.o
+
+.PHONY : codingbook.o
+
+# target to build an object file
+codingbook.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/codingbook.cpp.o
+.PHONY : codingbook.cpp.o
+
+codingbook.i: codingbook.cpp.i
+
+.PHONY : codingbook.i
+
+# target to preprocess a source file
+codingbook.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/codingbook.cpp.i
+.PHONY : codingbook.cpp.i
+
+codingbook.s: codingbook.cpp.s
+
+.PHONY : codingbook.s
+
+# target to generate assembly for a file
+codingbook.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/codingbook.cpp.s
+.PHONY : codingbook.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -231,6 +258,60 @@ student.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/student.cpp.s
 .PHONY : student.cpp.s
 
+teacher.o: teacher.cpp.o
+
+.PHONY : teacher.o
+
+# target to build an object file
+teacher.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/teacher.cpp.o
+.PHONY : teacher.cpp.o
+
+teacher.i: teacher.cpp.i
+
+.PHONY : teacher.i
+
+# target to preprocess a source file
+teacher.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/teacher.cpp.i
+.PHONY : teacher.cpp.i
+
+teacher.s: teacher.cpp.s
+
+.PHONY : teacher.s
+
+# target to generate assembly for a file
+teacher.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/teacher.cpp.s
+.PHONY : teacher.cpp.s
+
+virtualclass.o: virtualclass.cpp.o
+
+.PHONY : virtualclass.o
+
+# target to build an object file
+virtualclass.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/virtualclass.cpp.o
+.PHONY : virtualclass.cpp.o
+
+virtualclass.i: virtualclass.cpp.i
+
+.PHONY : virtualclass.i
+
+# target to preprocess a source file
+virtualclass.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/virtualclass.cpp.i
+.PHONY : virtualclass.cpp.i
+
+virtualclass.s: virtualclass.cpp.s
+
+.PHONY : virtualclass.s
+
+# target to generate assembly for a file
+virtualclass.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/virtualclass.cpp.s
+.PHONY : virtualclass.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,12 +327,21 @@ help:
 	@echo "... book.o"
 	@echo "... book.i"
 	@echo "... book.s"
+	@echo "... codingbook.o"
+	@echo "... codingbook.i"
+	@echo "... codingbook.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... student.o"
 	@echo "... student.i"
 	@echo "... student.s"
+	@echo "... teacher.o"
+	@echo "... teacher.i"
+	@echo "... teacher.s"
+	@echo "... virtualclass.o"
+	@echo "... virtualclass.i"
+	@echo "... virtualclass.s"
 .PHONY : help
 
 

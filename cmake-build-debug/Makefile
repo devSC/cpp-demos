@@ -123,6 +123,60 @@ cpp_demos/fast:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/build
 .PHONY : cpp_demos/fast
 
+Age.o: Age.cpp.o
+
+.PHONY : Age.o
+
+# target to build an object file
+Age.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Age.cpp.o
+.PHONY : Age.cpp.o
+
+Age.i: Age.cpp.i
+
+.PHONY : Age.i
+
+# target to preprocess a source file
+Age.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Age.cpp.i
+.PHONY : Age.cpp.i
+
+Age.s: Age.cpp.s
+
+.PHONY : Age.s
+
+# target to generate assembly for a file
+Age.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Age.cpp.s
+.PHONY : Age.cpp.s
+
+book.o: book.cpp.o
+
+.PHONY : book.o
+
+# target to build an object file
+book.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/book.cpp.o
+.PHONY : book.cpp.o
+
+book.i: book.cpp.i
+
+.PHONY : book.i
+
+# target to preprocess a source file
+book.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/book.cpp.i
+.PHONY : book.cpp.i
+
+book.s: book.cpp.s
+
+.PHONY : book.s
+
+# target to generate assembly for a file
+book.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/book.cpp.s
+.PHONY : book.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -186,6 +240,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cpp_demos"
+	@echo "... Age.o"
+	@echo "... Age.i"
+	@echo "... Age.s"
+	@echo "... book.o"
+	@echo "... book.i"
+	@echo "... book.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

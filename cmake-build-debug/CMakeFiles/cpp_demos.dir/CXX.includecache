@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
+/Users/devSC/Documents/MyProject/cpp-demos/book.cpp
+iostream
+-
+book.h
+/Users/devSC/Documents/MyProject/cpp-demos/book.h
+
+/Users/devSC/Documents/MyProject/cpp-demos/book.h
+
 /Users/devSC/Documents/MyProject/cpp-demos/main.cpp
 iostream
 -
 student.h
 /Users/devSC/Documents/MyProject/cpp-demos/student.h
+book.h
+/Users/devSC/Documents/MyProject/cpp-demos/book.h
 
 /Users/devSC/Documents/MyProject/cpp-demos/student.cpp
 student.h

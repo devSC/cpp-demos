@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Age.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Age.h">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/book.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/book.h">
+			<Option target="cpp_demos"/>
+		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/main.cpp">
 			<Option target="cpp_demos"/>
 		</Unit>

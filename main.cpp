@@ -1,5 +1,6 @@
 #include <iostream>
 #include "student.h"
+#include "book.h"
 
 //声明使用std命名控件，下面凡是用到标准库的方法属性都不需要使用std::去使用
 //std 是所有标准库的命名空间的名字，
@@ -234,6 +235,20 @@ void testClass() {
     student student1;
     student1.set_age(12);
     cout << student1.get_age() << endl;
+
+    //通常来讲，除非是迫不得已，否则最好不要采用 *传值的方式* 传递和返回对象，这是因为采用传值的方式传递和返回对象的过程中需要经历对象间的*拷贝操作*，这样会在一定程度上降低程序运行的效率，从而使得待处理数据量增大，增加内存的使用。而采用引用或指针的方式则不会有这样的问题，而实际上，因为引用表达更加简练直观，因此也较少使用指针来传递对象或作为函数返回值。
+
+    //对象的引用和普通的变量引用基本语法是一样的
+    student &student2 = student1;
+
+
+    book Alice;
+    Alice.settitle("Alice is Wonderland");
+    Alice.setprice(20.0);
+    Alice.display();
+
+    book Harry("Harry Potter", 49.9);
+    Harry.display();
 }
 
 

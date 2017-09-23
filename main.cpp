@@ -15,6 +15,7 @@
 #include <set>
 #include <map>
 #include <algorithm>
+#include <fstream>
 
 //声明使用std命名控件，下面凡是用到标准库的方法属性都不需要使用std::去使用
 //std 是所有标准库的命名空间的名字，
@@ -82,6 +83,9 @@ void testRelationSet();
 void testAlgorithm();
 
 
+//二进制文件读写
+void testFileOutput();
+
 int main() {
 
 //    testPrintf();
@@ -116,19 +120,130 @@ int main() {
 
 //    testRelationSet();
 
-    testAlgorithm();
+//    testAlgorithm();
+
+    testFileOutput();
+
     return 0;
 }
 
+
+enum indexError { underflow, overflow };
+
+int array_index( int *A, int n, int index );
+
+void testLog();
+
+void testios_baseMethod();
 
 void testPrintf() {
     // << 流插入运算符， 将后面的数据插入到输出流中去  endl 行结束， 如果没有则不会换行。
     cout << "Hello World" << endl;
     cout << "Welcome to c++!" << endl;
     cout << "The size of int is: \t\t" << sizeof(int) << "bytes. \n";
+
+    /*
+     * 标准输出流对象cout、cerr和clog中
+     * cerr和clog对象都是标准错误流，不同的是cerr是直接将错误信息输出到显示器，
+     * 而clog则不同，clog是将错误信息先写入到缓冲区，待清扫缓冲区时，
+     * 再将错误内容输出到显示器中。与cerr和clog对象不同，cout对象则非错误流，
+     * 而只是普通的输出流，该对象在进行输出时，也会经过先缓冲区，然后再输出到显示器。
+     * */
+//    testLog();
+    testios_baseMethod();
+
 }
 
+void testLog() {
+    int *A = new int [ 10 ];
+    for ( int i = 0; i < 10; i ++ )
+        A[i] = i;
+    try
+    {
+        cout << array_index( A,10,5 ) << endl;
+    }
+    catch( indexError e )
+    {
+        if( e == underflow )
+        {
+            cerr << "index underflow!" << endl;
+        }
+        if( e == overflow )
+        {
+            cerr << "index overflow!" << endl;
+        }
+    }
+    //index underflow test!
+    try
+    {
+        cout << array_index( A,10,-1 ) << endl;
+    }
+    catch( indexError e )
+    {
+        if( e == underflow )
+        {
+            cerr << "cerr - index underflow!" << endl;
+        }
+        if( e == overflow )
+        {
+            cerr << "cerr - index overflow!" << endl;
+        }
+    }
+    // index overflow test!
+    try
+    {
+        cout << array_index( A,10,15 ) << endl;
+    }
+    catch( indexError e )
+    {
+        if( e == underflow )
+        {
+            clog << "clog - index underflow!" << endl;
+        }
+        if( e == overflow )
+        {
+            clog << "clog - index overflow!" << endl;
+        }
+    }
+}
+
+int array_index( int *A, int n, int index ) {
+    if ( index < 0 ) throw underflow;
+    if ( index > n-1 ) throw overflow;
+    return A[index];
+}
+
+void testios_baseMethod() {
+    ios_base::fmtflags old_val = cout.flags( ios_base::left | ios_base::hex |ios_base::uppercase | ios_base::showbase );
+    for( int i = 100; i < 150; i ++ )
+        cout << i << endl;
+    cout<<endl<<endl;
+    cout.unsetf ( ios_base::left | ios_base::hex |ios_base::uppercase );
+    cout.setf ( old_val );
+    for( int i = 100; i < 150; i ++ )
+        cout << i << endl;
+    cout<<endl<<endl;
+    cout.unsetf( old_val );
+    cout.setf ( ios_base::hex | ios_base::uppercase );
+    cout << " hex " << 170 << endl;
+    cout.unsetf( ios_base::hex | ios_base::uppercase );
+    cout.setf ( ios_base::oct );
+    cout << " oct " << 170 << endl;
+    cout.unsetf( ios_base::oct );
+    cout.setf ( ios_base::dec );
+    cout << " dec " << 170 << endl;
+}
+
+
+void testInputGet();
+void testNormalInput();
+
 void testInput() {
+//    testNormalInput();
+    testInputGet();
+}
+
+void testNormalInput() {
     //声明常量
     const double pi(3.1415926);
     //定义变量
@@ -142,6 +257,17 @@ void testInput() {
     cout << "Please enter a different radius! \n";
     cin >> radius;
     cout << "Now the radius is changed to:" << radius << '\n';
+}
+
+void testInputGet() {
+    char a;
+    while ( (a = cin.get()) != EOF )
+    {
+        cout.put(a);
+    }
+    cout << endl;
+
+    //文件结束符 ctrl + d
 }
 
 int add(int x, int y) {
@@ -617,4 +743,67 @@ void testAlgorithm() {
     sort( num.begin(), num.end(), compare );
 
     for_each(num.begin(), num.end(), display);
+}
+
+
+void testFileOutput() {
+    int A[ 3 ][ 10 ] = { { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 },
+                         { 1, 2, 3, 4, 7, 7, 7, 7, 7, 7 },
+                         { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 } };
+    int B[ 3 ][ 10 ];
+    int i, j;
+    for( i = 0; i < 3; i++ )
+    {
+        for( j = 0 ; j < 10; j++ )
+        {
+            cout << A[ i ][ j ] <<" ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+    //*******************************************
+    ofstream output( "test.txt", ios::out | ios::binary );
+    if( ! output )
+    {
+        cerr << "Open output file error!" << endl;
+        exit( -1 );
+    }
+    output.write ((char *) A, sizeof( A ) );
+    for( i = 0; i < 3; i++ )
+    {
+        for( j = 0 ; j < 10; j++ )
+        {
+            //output.write ( ( char * ) & A [ i ][ j ], sizeof( A [ i ][ j ] ) );
+        }
+    }
+    output.close();
+    //*******************************************
+    ifstream input( "test.txt", ios::in | ios::binary );
+    if( ! input )
+    {
+        cerr << "Open input file error!" << endl;
+        exit( -1 );
+    }
+    input.read( ( char * ) & B , sizeof( B ) );
+    for( i = 0; i < 3; i++ )
+    {
+        for( j = 0 ; j < 10; j++ )
+        {
+            //input.read ( ( char * ) & B[ i ][ j ], sizeof( B[ i ][ j ] ));
+        }
+    }
+    for( i = 0; i < 3; i++ )
+    {
+        for( j = 0 ; j < 10; j++ )
+        {
+            cout << B[ i ][ j ] <<" ";
+        }
+        cout << endl;
+    }
+    //*******************************************
+    int temp;
+    input.seekg( 20 * sizeof( int ), ios::beg );
+    input.read( ( char * ) & temp, sizeof( int ));
+    cout << temp << endl;
+    input.close();
 }

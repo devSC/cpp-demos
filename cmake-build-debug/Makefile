@@ -150,32 +150,86 @@ Age.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Age.cpp.s
 .PHONY : Age.cpp.s
 
-Array.o: Array.cpp.o
+MyArray.o: MyArray.cpp.o
 
-.PHONY : Array.o
+.PHONY : MyArray.o
 
 # target to build an object file
-Array.cpp.o:
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Array.cpp.o
-.PHONY : Array.cpp.o
+MyArray.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/MyArray.cpp.o
+.PHONY : MyArray.cpp.o
 
-Array.i: Array.cpp.i
+MyArray.i: MyArray.cpp.i
 
-.PHONY : Array.i
+.PHONY : MyArray.i
 
 # target to preprocess a source file
-Array.cpp.i:
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Array.cpp.i
-.PHONY : Array.cpp.i
+MyArray.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/MyArray.cpp.i
+.PHONY : MyArray.cpp.i
 
-Array.s: Array.cpp.s
+MyArray.s: MyArray.cpp.s
 
-.PHONY : Array.s
+.PHONY : MyArray.s
 
 # target to generate assembly for a file
-Array.cpp.s:
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Array.cpp.s
-.PHONY : Array.cpp.s
+MyArray.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/MyArray.cpp.s
+.PHONY : MyArray.cpp.s
+
+Store.o: Store.cpp.o
+
+.PHONY : Store.o
+
+# target to build an object file
+Store.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Store.cpp.o
+.PHONY : Store.cpp.o
+
+Store.i: Store.cpp.i
+
+.PHONY : Store.i
+
+# target to preprocess a source file
+Store.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Store.cpp.i
+.PHONY : Store.cpp.i
+
+Store.s: Store.cpp.s
+
+.PHONY : Store.s
+
+# target to generate assembly for a file
+Store.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Store.cpp.s
+.PHONY : Store.cpp.s
+
+array.o: array.cpp.o
+
+.PHONY : array.o
+
+# target to build an object file
+array.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/array.cpp.o
+.PHONY : array.cpp.o
+
+array.i: array.cpp.i
+
+.PHONY : array.i
+
+# target to preprocess a source file
+array.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/array.cpp.i
+.PHONY : array.cpp.i
+
+array.s: array.cpp.s
+
+.PHONY : array.s
+
+# target to generate assembly for a file
+array.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/array.cpp.s
+.PHONY : array.cpp.s
 
 book.o: book.cpp.o
 
@@ -312,6 +366,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mypair.o: mypair.cpp.o
+
+.PHONY : mypair.o
+
+# target to build an object file
+mypair.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/mypair.cpp.o
+.PHONY : mypair.cpp.o
+
+mypair.i: mypair.cpp.i
+
+.PHONY : mypair.i
+
+# target to preprocess a source file
+mypair.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/mypair.cpp.i
+.PHONY : mypair.cpp.i
+
+mypair.s: mypair.cpp.s
+
+.PHONY : mypair.s
+
+# target to generate assembly for a file
+mypair.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/mypair.cpp.s
+.PHONY : mypair.cpp.s
+
+pair.o: pair.cpp.o
+
+.PHONY : pair.o
+
+# target to build an object file
+pair.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/pair.cpp.o
+.PHONY : pair.cpp.o
+
+pair.i: pair.cpp.i
+
+.PHONY : pair.i
+
+# target to preprocess a source file
+pair.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/pair.cpp.i
+.PHONY : pair.cpp.i
+
+pair.s: pair.cpp.s
+
+.PHONY : pair.s
+
+# target to generate assembly for a file
+pair.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/pair.cpp.s
+.PHONY : pair.cpp.s
+
 purevirtualclass.o: purevirtualclass.cpp.o
 
 .PHONY : purevirtualclass.o
@@ -432,9 +540,15 @@ help:
 	@echo "... Age.o"
 	@echo "... Age.i"
 	@echo "... Age.s"
-	@echo "... Array.o"
-	@echo "... Array.i"
-	@echo "... Array.s"
+	@echo "... MyArray.o"
+	@echo "... MyArray.i"
+	@echo "... MyArray.s"
+	@echo "... Store.o"
+	@echo "... Store.i"
+	@echo "... Store.s"
+	@echo "... array.o"
+	@echo "... array.i"
+	@echo "... array.s"
 	@echo "... book.o"
 	@echo "... book.i"
 	@echo "... book.s"
@@ -450,6 +564,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mypair.o"
+	@echo "... mypair.i"
+	@echo "... mypair.s"
+	@echo "... pair.o"
+	@echo "... pair.i"
+	@echo "... pair.s"
 	@echo "... purevirtualclass.o"
 	@echo "... purevirtualclass.i"
 	@echo "... purevirtualclass.s"

@@ -3,6 +3,19 @@
 #include "book.h"
 #include "derived.h"
 #include "complex.h"
+#include "MyArray.h"
+#include "mypair.h"
+#include "Store.h"
+#include "array.h"
+
+#include <string>
+#include <vector>
+#include <deque>
+#include <list>
+#include <set>
+#include <map>
+#include <algorithm>
+
 //声明使用std命名控件，下面凡是用到标准库的方法属性都不需要使用std::去使用
 //std 是所有标准库的命名空间的名字，
 using namespace std;
@@ -56,6 +69,19 @@ void testVirtualClassAndMethod();
 void testcomplex();
 
 
+//模板模式 匿名函数
+void testTemplateClass();
+
+//基本序列式容器
+void testSequence();
+
+//基本关联式容器
+void testRelationSet();
+
+//STL 算法
+void testAlgorithm();
+
+
 int main() {
 
 //    testPrintf();
@@ -82,7 +108,15 @@ int main() {
 
 //    testVirtualClassAndMethod();
 
-    void testcomplex();
+//    testcomplex();
+
+//    testTemplateClass();
+
+//    testSequence();
+
+//    testRelationSet();
+
+    testAlgorithm();
     return 0;
 }
 
@@ -252,13 +286,13 @@ void testClass() {
     student &student2 = student1;
 
 
-    book Alice;
-    Alice.settitle("Alice is Wonderland");
-    Alice.setprice(20.0);
-    Alice.display();
-
-    book Harry("Harry Potter", 49.9);
-    display(Harry);
+//    book Alice;
+//    Alice.settitle("Alice is Wonderland");
+//    Alice.setprice(20.0);
+//    Alice.display();
+//
+//    book Harry("Harry Potter", 49.9);
+//    display(Harry);
 }
 
 
@@ -358,4 +392,229 @@ void testcomplex() {
     cout<<"c1 / c2 = ";
     c3.display();
     cout<<endl;
+}
+
+// 函数模板
+
+
+template <class T>
+T getmax(T a, T b) {
+    T result;
+    result = ( a > b) ? a : b;
+    return result;
+}
+
+
+void testTemplateClass() {
+
+//    cout<< getmax<int>(1,5) << endl;
+//    mypair<int> myobject(114, 46);
+
+    MyArray<int> a(10);
+    for (int i = 0; i < 10; ++i) {
+        a[i] = 2 * i;
+    }
+    cout << a << endl;
+
+    //模板中的函数式参数
+    HI::array<int, 10> b;
+    for (int i = 0; i < 10; ++i) {
+        b[i] = 2 * i;
+    }
+    cout << b << endl;
+
+    Store<int> s1, s2;
+    s1.putElem(3);
+    s2.putElem(-7);
+    cout << s1.getElem() << " " << s2.getElem() << endl;
+}
+
+
+void testDeque();
+void testVector();
+void testList();
+
+void testSequence() {
+    /*
+    vector	序列式容器	按照需要改变长度的数组
+    list	序列式容器	双向链表
+    deque	序列式容器	可以操作两端的数组
+    set	关联式容器	集合
+    multiset	关联式容器	允许重复的集合
+    map	关联式容器	图表
+    multimap	关联式容器	允许重复的图表
+
+
+     关于操作效率:
+
+     基本操作	vector	deque	list
+     在容器头部插入或删除元素	线性	恒定	恒定
+     在容器尾部插入或删除元素	恒定	恒定	恒定
+     在容器中部插入或删除元素	线性	线性	恒定
+     访问容器头部的元素	恒定	恒定	恒定
+     访问容器尾部的元素	恒定	恒定	恒定
+     访问容器中部的元素	恒定	恒定	线性
+    */
+
+    testVector();
+
+    //两个程序的运行结果完全相同。是不是vector和deque相同呢？其实不是的，vector说到底是个数组，在非尾部插入元素都需要移动其它元素，deque则不同，它是一个可以操作数组头部和尾部的数组，因此在头部或尾部插入或删除数据，其处理效率都是一样的。当我们需要频繁在头部和尾部插入或删除数据，则deque优于vector。
+    testDeque();
+
+    testList();
+}
+
+void testVector() {
+    vector<int> num;
+    num.push_back(50);
+    num.insert(num.begin(), 10);
+    num.insert(num.end(), 20);
+    num.push_back(60);
+    num.push_back(40);
+    cout << num.size() << endl;
+    for(int i = 0; i < num.size(); i++)
+        cout << num[i] << " ";
+    cout << endl;
+    num.erase(num.begin());
+    cout << num.size() << endl;
+    for(int i = 0; i < num.size(); i++)
+        cout<< num[i] <<" ";
+    cout << endl;
+}
+
+
+void testDeque() {
+    deque<int> num;
+    num.push_back(50);
+    num.insert(num.begin(), 10);
+    num.insert(num.end(), 20);
+    num.push_back(60);
+    num.push_back(40);
+    cout << num.size() << endl;
+    for(int i = 0; i < num.size(); i++)
+        cout << num[i] << " ";
+    cout << endl;
+    num.erase(num.begin());
+    cout << num.size() << endl;
+    for(int i = 0; i < num.size(); i++)
+        cout<< num[i] <<" ";
+    cout << endl;
+}
+
+void testList() {
+    list<string> str;
+    str.insert( str.begin(), "A" );
+    str.insert( str.begin(), "B" );
+    str.insert( str.end(), "C" );
+    str.insert( str.end(), "D" );
+    str.insert( str.begin(), "E" );
+    str.insert( str.begin(), "F" );
+
+    //定义容器
+    //定义了一个迭代器iter。通常每定义一个容器，就会有一个与容器数据类型相关的迭代器
+    list< string >::iterator iter;
+
+    //list< string >::const_iterator
+
+    //将迭代器指向str,begin()
+    for(iter = str.begin(); iter != str.end(); iter++)
+        cout<< * iter << " ";
+
+    cout << endl;
+    str.reverse();
+    for(iter = str.begin(); iter != str.end(); iter++)
+        cout<< * iter <<" ";
+    cout << endl;
+}
+
+
+void testSet();
+void testMap();
+
+//基本关联式容器
+void testRelationSet() {
+    /*
+     关联式容器主要有：set、multiset、map和multimap，这四种容器可以分为两组：map和set。
+
+     set可以理解为我们数学中的集合，它可以包含0个或多个不重复、不排序的数据，这些数据被称为键值。map也是一种集合，它同样可以包含0个或多个不排序的元素对，每一个元素对有一个键值和一个与键值相关联的值，在map中键值是不允许重复的。而multiset则是允许重复的集合，multimap则是允许有重复键值的map，因为multiset和multimap可以看做是set和map的扩展，因此我们将主要介绍set和map。
+     */
+    testSet();
+    testMap();
+}
+
+void testSet() {
+
+    set< int > s;
+    //insert函数能保证插入元素后set容器中不会出现重复的元素。 但不保证顺序.
+    s.insert(s.begin(), 9);
+    s.insert(1);
+    s.insert(s.end(),4);
+    s.insert(5);
+    s.insert(6);
+    s.insert(7);
+    s.insert(9);
+    s.insert(0);
+    set< int >::const_iterator itor;
+    for(itor = s.begin (); itor != s.end(); itor++)
+        cout<< *itor<<" ";
+    cout<< endl;
+    itor = s.find( 2 );
+    if( itor == s.end() )
+        cout<< "NOT Found 2!" << endl;
+    else
+        cout<< "Found 2 in set!" << endl;
+    itor = s.find( 5 );
+    if( itor == s.end() )
+        cout<< "NOT Found 5!" << endl;
+    else
+        cout<< "Found 5 in set!" << endl;
+}
+
+void testMap() {
+    map<char, int> m;
+    m[ 'a' ] = 1;
+    m[ 'b' ] = 2;
+    m[ 'c' ] = 3;
+    m[ 'd' ] = 4;
+    m[ 'e' ] = 1;
+    m[ 'f' ] = 2;
+    m[ 'g' ] = 3;
+    m[ 'h' ] = 4;
+    m[ 'a' ] = 0;
+    map< char, int >::iterator itor;
+    for(itor = m.begin(); itor != m.end(); itor++)
+        cout << itor->first << " -- " << itor->second <<endl;
+
+}
+
+
+
+
+
+
+
+bool compare( const int & a, const int & b)
+{
+    return a > b;
+}
+void display( int i )
+{
+    cout<< i << " ";
+}
+bool odd( int i )
+{
+    return i % 2 != 0;
+}
+
+void testAlgorithm() {
+    vector<int> num(10);
+
+    //生成随机数字，填充num
+    generate( num.begin(), num.end(), rand );
+    //将其中的奇数全部替换我0
+    replace_if( num.begin(), num.end(), odd, 0 );
+    //从大到小排序
+    sort( num.begin(), num.end(), compare );
+
+    for_each(num.begin(), num.end(), display);
 }

@@ -297,28 +297,124 @@ CMakeFiles/cpp_demos.dir/complex.cpp.o.provides: CMakeFiles/cpp_demos.dir/comple
 CMakeFiles/cpp_demos.dir/complex.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/complex.cpp.o
 
 
-CMakeFiles/cpp_demos.dir/Array.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
-CMakeFiles/cpp_demos.dir/Array.cpp.o: ../Array.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cpp_demos.dir/Array.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/Array.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/Array.cpp
+CMakeFiles/cpp_demos.dir/pair.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
+CMakeFiles/cpp_demos.dir/pair.cpp.o: ../pair.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cpp_demos.dir/pair.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/pair.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/pair.cpp
 
-CMakeFiles/cpp_demos.dir/Array.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/Array.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/Array.cpp > CMakeFiles/cpp_demos.dir/Array.cpp.i
+CMakeFiles/cpp_demos.dir/pair.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/pair.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/pair.cpp > CMakeFiles/cpp_demos.dir/pair.cpp.i
 
-CMakeFiles/cpp_demos.dir/Array.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/Array.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/Array.cpp -o CMakeFiles/cpp_demos.dir/Array.cpp.s
+CMakeFiles/cpp_demos.dir/pair.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/pair.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/pair.cpp -o CMakeFiles/cpp_demos.dir/pair.cpp.s
 
-CMakeFiles/cpp_demos.dir/Array.cpp.o.requires:
+CMakeFiles/cpp_demos.dir/pair.cpp.o.requires:
 
-.PHONY : CMakeFiles/cpp_demos.dir/Array.cpp.o.requires
+.PHONY : CMakeFiles/cpp_demos.dir/pair.cpp.o.requires
 
-CMakeFiles/cpp_demos.dir/Array.cpp.o.provides: CMakeFiles/cpp_demos.dir/Array.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Array.cpp.o.provides.build
-.PHONY : CMakeFiles/cpp_demos.dir/Array.cpp.o.provides
+CMakeFiles/cpp_demos.dir/pair.cpp.o.provides: CMakeFiles/cpp_demos.dir/pair.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/pair.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_demos.dir/pair.cpp.o.provides
 
-CMakeFiles/cpp_demos.dir/Array.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/Array.cpp.o
+CMakeFiles/cpp_demos.dir/pair.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/pair.cpp.o
+
+
+CMakeFiles/cpp_demos.dir/mypair.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
+CMakeFiles/cpp_demos.dir/mypair.cpp.o: ../mypair.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cpp_demos.dir/mypair.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/mypair.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/mypair.cpp
+
+CMakeFiles/cpp_demos.dir/mypair.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/mypair.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/mypair.cpp > CMakeFiles/cpp_demos.dir/mypair.cpp.i
+
+CMakeFiles/cpp_demos.dir/mypair.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/mypair.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/mypair.cpp -o CMakeFiles/cpp_demos.dir/mypair.cpp.s
+
+CMakeFiles/cpp_demos.dir/mypair.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_demos.dir/mypair.cpp.o.requires
+
+CMakeFiles/cpp_demos.dir/mypair.cpp.o.provides: CMakeFiles/cpp_demos.dir/mypair.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/mypair.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_demos.dir/mypair.cpp.o.provides
+
+CMakeFiles/cpp_demos.dir/mypair.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/mypair.cpp.o
+
+
+CMakeFiles/cpp_demos.dir/MyArray.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
+CMakeFiles/cpp_demos.dir/MyArray.cpp.o: ../MyArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/cpp_demos.dir/MyArray.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/MyArray.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/MyArray.cpp
+
+CMakeFiles/cpp_demos.dir/MyArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/MyArray.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/MyArray.cpp > CMakeFiles/cpp_demos.dir/MyArray.cpp.i
+
+CMakeFiles/cpp_demos.dir/MyArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/MyArray.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/MyArray.cpp -o CMakeFiles/cpp_demos.dir/MyArray.cpp.s
+
+CMakeFiles/cpp_demos.dir/MyArray.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_demos.dir/MyArray.cpp.o.requires
+
+CMakeFiles/cpp_demos.dir/MyArray.cpp.o.provides: CMakeFiles/cpp_demos.dir/MyArray.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/MyArray.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_demos.dir/MyArray.cpp.o.provides
+
+CMakeFiles/cpp_demos.dir/MyArray.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/MyArray.cpp.o
+
+
+CMakeFiles/cpp_demos.dir/Store.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
+CMakeFiles/cpp_demos.dir/Store.cpp.o: ../Store.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/cpp_demos.dir/Store.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/Store.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/Store.cpp
+
+CMakeFiles/cpp_demos.dir/Store.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/Store.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/Store.cpp > CMakeFiles/cpp_demos.dir/Store.cpp.i
+
+CMakeFiles/cpp_demos.dir/Store.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/Store.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/Store.cpp -o CMakeFiles/cpp_demos.dir/Store.cpp.s
+
+CMakeFiles/cpp_demos.dir/Store.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_demos.dir/Store.cpp.o.requires
+
+CMakeFiles/cpp_demos.dir/Store.cpp.o.provides: CMakeFiles/cpp_demos.dir/Store.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/Store.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_demos.dir/Store.cpp.o.provides
+
+CMakeFiles/cpp_demos.dir/Store.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/Store.cpp.o
+
+
+CMakeFiles/cpp_demos.dir/array.cpp.o: CMakeFiles/cpp_demos.dir/flags.make
+CMakeFiles/cpp_demos.dir/array.cpp.o: ../array.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/cpp_demos.dir/array.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_demos.dir/array.cpp.o -c /Users/devSC/Documents/MyProject/cpp-demos/array.cpp
+
+CMakeFiles/cpp_demos.dir/array.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_demos.dir/array.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/devSC/Documents/MyProject/cpp-demos/array.cpp > CMakeFiles/cpp_demos.dir/array.cpp.i
+
+CMakeFiles/cpp_demos.dir/array.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_demos.dir/array.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/devSC/Documents/MyProject/cpp-demos/array.cpp -o CMakeFiles/cpp_demos.dir/array.cpp.s
+
+CMakeFiles/cpp_demos.dir/array.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_demos.dir/array.cpp.o.requires
+
+CMakeFiles/cpp_demos.dir/array.cpp.o.provides: CMakeFiles/cpp_demos.dir/array.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_demos.dir/build.make CMakeFiles/cpp_demos.dir/array.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_demos.dir/array.cpp.o.provides
+
+CMakeFiles/cpp_demos.dir/array.cpp.o.provides.build: CMakeFiles/cpp_demos.dir/array.cpp.o
 
 
 # Object files for target cpp_demos
@@ -333,7 +429,11 @@ cpp_demos_OBJECTS = \
 "CMakeFiles/cpp_demos.dir/derived.cpp.o" \
 "CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o" \
 "CMakeFiles/cpp_demos.dir/complex.cpp.o" \
-"CMakeFiles/cpp_demos.dir/Array.cpp.o"
+"CMakeFiles/cpp_demos.dir/pair.cpp.o" \
+"CMakeFiles/cpp_demos.dir/mypair.cpp.o" \
+"CMakeFiles/cpp_demos.dir/MyArray.cpp.o" \
+"CMakeFiles/cpp_demos.dir/Store.cpp.o" \
+"CMakeFiles/cpp_demos.dir/array.cpp.o"
 
 # External object files for target cpp_demos
 cpp_demos_EXTERNAL_OBJECTS =
@@ -348,10 +448,14 @@ cpp_demos: CMakeFiles/cpp_demos.dir/virtualclass.cpp.o
 cpp_demos: CMakeFiles/cpp_demos.dir/derived.cpp.o
 cpp_demos: CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o
 cpp_demos: CMakeFiles/cpp_demos.dir/complex.cpp.o
-cpp_demos: CMakeFiles/cpp_demos.dir/Array.cpp.o
+cpp_demos: CMakeFiles/cpp_demos.dir/pair.cpp.o
+cpp_demos: CMakeFiles/cpp_demos.dir/mypair.cpp.o
+cpp_demos: CMakeFiles/cpp_demos.dir/MyArray.cpp.o
+cpp_demos: CMakeFiles/cpp_demos.dir/Store.cpp.o
+cpp_demos: CMakeFiles/cpp_demos.dir/array.cpp.o
 cpp_demos: CMakeFiles/cpp_demos.dir/build.make
 cpp_demos: CMakeFiles/cpp_demos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable cpp_demos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/devSC/Documents/MyProject/cpp-demos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable cpp_demos"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_demos.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -369,7 +473,11 @@ CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/virtualclass.cpp.o.r
 CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/derived.cpp.o.requires
 CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o.requires
 CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/complex.cpp.o.requires
-CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/Array.cpp.o.requires
+CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/pair.cpp.o.requires
+CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/mypair.cpp.o.requires
+CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/MyArray.cpp.o.requires
+CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/Store.cpp.o.requires
+CMakeFiles/cpp_demos.dir/requires: CMakeFiles/cpp_demos.dir/array.cpp.o.requires
 
 .PHONY : CMakeFiles/cpp_demos.dir/requires
 

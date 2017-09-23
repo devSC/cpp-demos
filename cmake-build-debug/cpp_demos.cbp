@@ -86,10 +86,22 @@
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Age.h">
 			<Option target="cpp_demos"/>
 		</Unit>
-		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Array.cpp">
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/MyArray.cpp">
 			<Option target="cpp_demos"/>
 		</Unit>
-		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Array.h">
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/MyArray.h">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Store.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/Store.h">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/array.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/array.h">
 			<Option target="cpp_demos"/>
 		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/book.cpp">
@@ -117,6 +129,18 @@
 			<Option target="cpp_demos"/>
 		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/main.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/mypair.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/mypair.h">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/pair.cpp">
+			<Option target="cpp_demos"/>
+		</Unit>
+		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/pair.h">
 			<Option target="cpp_demos"/>
 		</Unit>
 		<Unit filename="/Users/devSC/Documents/MyProject/cpp-demos/purevirtualclass.cpp">

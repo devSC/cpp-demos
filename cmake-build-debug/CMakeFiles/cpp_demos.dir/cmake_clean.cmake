@@ -9,7 +9,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_demos.dir/derived.cpp.o"
   "CMakeFiles/cpp_demos.dir/purevirtualclass.cpp.o"
   "CMakeFiles/cpp_demos.dir/complex.cpp.o"
-  "CMakeFiles/cpp_demos.dir/Array.cpp.o"
+  "CMakeFiles/cpp_demos.dir/pair.cpp.o"
+  "CMakeFiles/cpp_demos.dir/mypair.cpp.o"
+  "CMakeFiles/cpp_demos.dir/MyArray.cpp.o"
+  "CMakeFiles/cpp_demos.dir/Store.cpp.o"
+  "CMakeFiles/cpp_demos.dir/array.cpp.o"
   "cpp_demos.pdb"
   "cpp_demos"
 )

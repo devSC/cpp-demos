@@ -86,6 +86,10 @@ void testAlgorithm();
 //二进制文件读写
 void testFileOutput();
 
+
+//指针
+void testPointer();
+
 int main() {
 
 //    testPrintf();
@@ -122,7 +126,9 @@ int main() {
 
 //    testAlgorithm();
 
-    testFileOutput();
+//    testFileOutput();
+
+    testPointer();
 
     return 0;
 }
@@ -807,3 +813,294 @@ void testFileOutput() {
     cout << temp << endl;
     input.close();
 }
+
+
+
+
+/*
+ * 指针
+ *
+ * 指针是一个变量, 其值为另一个变量的地址. 即, 内存地址的直接地址.
+ */
+void testSimplePointer();
+
+void testArrayWithPointer();
+
+//从函数返回指针
+void testReturnPointerFromFunction();
+
+void testPointer() {
+
+    // * 号用来指定一个变量是指针.
+
+    //定义一个整形指针
+    int *ip;
+
+    //一个double 型指针
+    double *dp;
+
+    //一个浮点型指针
+    float *fp;
+
+    //一个字符型指针.
+    char *cp;
+
+//    testSimplePointer();
+
+    testArrayWithPointer();
+
+//    testReturnPointerFromFunction();
+}
+
+
+void testSimplePointer() {
+    /*
+    * 所有指针的值的实际数据类型, 不管是整型, 浮点型, 字符型, 还是其他的数据类型
+    * 都是一样的, 都是一个代表内存地址的十六进制数.
+    *
+    * 不同数据类型的指针之间唯一的不同是, 指针所指向的变量或常量的数据类型不同.
+    *
+    *
+    * 使用指针时会频繁进行以下几个操作：定义一个指针变量、把变量地址赋值给指针、访问指针变量中可用地址的值
+    */
+
+    //声明实际变量
+    int var = 20;
+    //声明指针变量
+    int *ip;
+
+    //在指针变量中存储变量var的地址
+    ip = &var;
+
+    cout << "Value of var variable: ";
+    cout << var << endl;
+
+    //输出变量 ip 中存储的变量var的地址
+    cout << "Value of ip variable: " << ip << endl;
+    //输出在指针变量中存储的地址
+    cout << "Value of *ip variable: " << *ip << endl;
+
+}
+
+
+//指针 vs 数组
+
+//指针数组
+void testArrayWithPointer2();
+
+//字符指针
+void testCharPointerArray();
+
+//指向指针的指针（多级间接寻址）
+void testPointerToPointer();
+
+//传递指针给函数
+void testPointerForFunction();
+
+void testArrayWithPointer() {
+    /*
+     * 指针和数组是密切相关的。事实上，指针和数组在很多情况下是可以互换的。例如，一个指向数组开头的指针，可以通过使用指针的算术运算或数组索引来访问数组。请看下面的程序：
+     */
+
+    const int MAX = 3;
+
+    //这里数组的值其实就是数组的首元素的地址
+    int var[MAX] = {10, 100, 200};
+
+    //定义一个指针 "*ip"，其中 "ip" 需要赋于一个地址(可以用 & 符号获取其他变量的地址再赋值给 ip)，而 "*ip" 是一个具体的值，即读取地址后获得的值；
+    int *ptr;
+
+    //由于一个数组名对应一个指针常量，只要不改变数组的值，仍然可以用指针形式的表达式。例如，下面是一个有效的语句，把 var[2] 赋值为 500：
+    *(var + 2) = 500;
+
+
+    //指针中的数组地址
+    ptr = var;
+    for (int i = 0; i < MAX; ++i) {
+        cout << "var[" << i << "]的内存地址为 " << ptr << " ";
+        cout << "var[" << i << "]的值为 " << *ptr << endl;
+
+        //移动到下一个位置
+        ptr ++;
+    }
+
+
+//    testArrayWithPointer2();
+    testCharPointerArray();
+//    testPointerToPointer();
+//    testPointerForFunction();
+}
+
+
+//指针数组
+void testArrayWithPointer2() {
+
+    cout << "[testArrayWithPointer2]" << endl;
+
+    /*
+     * 指针和数组是密切相关的。事实上，指针和数组在很多情况下是可以互换的。例如，一个指向数组开头的指针，可以通过使用指针的算术运算或数组索引来访问数组。请看下面的程序：
+     */
+
+    const int MAX = 3;
+
+    //这里数组的值其实就是数组的首元素的地址
+    int var[MAX] = {10, 100, 200};
+
+    //让数组 存储 指向 int 或 char 或其他数据类型 的指针
+    int *ptr[MAX];
+    //把 ptr 声明为一个数组，由 MAX 个整数指针组成。因此，ptr 中的每个元素，都是一个指向 int 值的指针。
+
+    *(var + 2) = 500;
+
+
+    //指针中的数组地址
+    for (int i = 0; i < MAX; ++i) {
+        ptr[i] = &var[i];
+    }
+
+    for (int j = 0; j < MAX; ++j) {
+        cout << "var[" << j << "]的值为 " << *ptr[j] << endl;
+    }
+
+
+}
+
+
+//用一个指向字符的指针数组来存储一个字符串列表，如下：
+void testCharPointerArray() {
+    const int MAX = 4;
+
+
+    //char *names[MAX] 是指针数组, 它的本质是存储指针的数组, 既存储 char 类型的指针的数组, 数组内的每个元素都是一个指针指向一个存储 char 类型的地址:
+    //http://www.runoob.com/cplusplus/cpp-array-of-pointers.html
+    const char *names[MAX] = {
+            "Zara Ali",
+            "Hina Ali",
+            "Nuha Ali",
+            "Sara Ali",
+    };
+
+    for (int i = 0; i < MAX; ++i) {
+        cout << "Value of names[" << i << "] = ";
+        cout << names[i] << endl;
+
+        cout << " --- names[i]              = " << names[i] << endl;
+        cout << " --- *names[i]             = " << *names[i] << endl;
+        cout << endl;
+        cout << " --- (*names[i] + 1)       = " << (*names[i] + 1) << endl;
+        cout << " --- (char)(*names[i] + 1) = " << (char)(*names[i] + 1) << endl;
+        cout << " ------------------------------------ " << endl << endl << endl << endl;
+
+    }
+}
+
+
+/*
+ * 指向指针的指针（多级间接寻址）
+ *
+ * 指向指针的指针是一种多级间接寻址的形式，或者说是一个指针链。通常，一个指针包含一个变量的地址。当我们定义一个指向指针的指针时，第一个指针包含了第二个指针的地址，第二个指针指向包含实际值的位置。
+ */
+void testPointerToPointer() {
+
+    //声明了一个指向 int 类型指针的指针：
+    //int **var;
+
+    int var;
+    int *ptr;
+    int **pptr;
+
+    var = 3000;
+
+    //获取var的地址
+    ptr = &var;
+
+    //使用运算符 & 获取 ptr的地址.
+    pptr = &ptr;
+
+    //使用pptr获取值
+    cout << "Value of var :" << var << endl;
+    cout << "Value available at *ptr :" << *ptr << endl;
+    cout << "Value available at **pptr :" << **pptr << endl;
+}
+
+
+
+
+
+//传递一个无符号的 long 型指针给函数，并在函数内改变这个值：
+void getSeconds(unsigned long *par);
+
+// 函数声明
+double getAverage(int *arr, int size);
+
+void testPointerForFunction() {
+
+    unsigned long sec;
+    getSeconds(&sec);
+    // 输出实际值
+    cout << "Number of seconds :" << sec << endl;
+
+
+    // 带有 5 个元素的整型数组
+    int balance[5] = {1000, 2, 3, 17, 50};
+    double avg;
+    // 传递一个指向数组的指针作为参数
+    avg = getAverage( balance, 5 ) ;
+    // 输出返回值
+    cout << "Average value is: " << avg << endl;
+}
+
+void getSeconds(unsigned long *par) {
+    // 获取当前的秒数
+    *par = time( NULL );
+}
+
+
+double getAverage(int *arr, int size) {
+    int i, sum = 0;
+    double avg;
+
+    for (i = 0; i < size; ++i) {
+        sum += arr[i];
+    }
+
+    avg = double(sum) / size;
+    return avg;
+}
+
+
+
+//您必须声明一个返回指针的函数，如下:
+//int * function() {
+//
+//}
+
+//C++ 不支持在函数外返回局部变量的地址，除非定义局部变量为 static 变量。
+int * getRandom() {
+    static int r[10];
+
+    //设置种子
+    srand((unsigned)time(NULL));
+    for (int i = 0; i < 10; ++i) {
+        r[i] = rand();
+        cout << r[i] << endl;
+    }
+    return r;
+}
+
+
+
+void testReturnPointerFromFunction() {
+// 一个指向整数的指针
+    int *p;
+
+    p = getRandom();
+    for ( int i = 0; i < 10; i++ ) {
+        cout << "*(p + " << i << ") : ";
+        cout << *(p + i) << endl;
+    }
+}
+
+
+
+

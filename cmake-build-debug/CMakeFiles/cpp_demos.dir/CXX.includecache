@@ -111,6 +111,8 @@ algorithm
 -
 fstream
 -
+pthread.h
+-
 
 /Users/devSC/Documents/MyProject/cpp-demos/mypair.cpp
 mypair.h

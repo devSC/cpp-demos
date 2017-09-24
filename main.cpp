@@ -18,7 +18,7 @@
 #include <fstream>
 #include <pthread.h>
 
-//声明使用std命名控件，下面凡是用到标准库的方法属性都不需要使用std::去使用
+//声明使用std命名空间，下面凡是用到标准库的方法属性都不需要使用std::去使用
 //std 是所有标准库的命名空间的名字，
 using namespace std;
 
@@ -35,7 +35,7 @@ int add(int x, int y);
 
 
 
-
+//命名控件
 void testNameSpace();
 
 /*-------BEGIN--------*/
@@ -58,12 +58,13 @@ void swap(int &a, int &b);
 
 
 
-
+//动态控件分配
 void testNewDelete();
 
-
+//类
 void testClass();
 
+//纯虚函数 和 纯虚类(类似于Oc中的接口)
 void testVirtualClassAndMethod();
 
 

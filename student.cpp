@@ -20,3 +20,7 @@ void student::set_id_num(int a) {
 int student::get_id_num() {
     return id_num;
 }
+
+void student::set_sex(const int sex) {
+    this->sex = sex;
+}

@@ -23,7 +23,20 @@ class student {
 public:
     //set_age函数和get_age函数在类声明内部仅有声明部分，而无定义部分，其函数体在类声明之外定义。本例中定义函数采用了域解析符 ::。
     void set_age(int a);
+    /** C++类与const关键字
+     *  http://www.weixueyuan.net/view/6348.html
+     *
+     *  在类中，有时候为了避免误操作而修改了一些人们不希望被修改的数据，此时就必须借助const关键字加以限定了。
+     *
+     *  借助const关键字可以定义const类型的成员变量、成员函数、常对象以及对象的常引用。
+     */
     int get_age() const;
+
+
+    /**
+     * 在将对象作为函数参数的时候，通常我们会采用引用的方式作为函数参数。有时候为了在函数中避免对对象本身做出什么修改，在函数形参前加上const关键字。
+     * */
+    void set_sex(const int sex);
 };
 
 
